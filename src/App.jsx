@@ -215,6 +215,8 @@ function App() {
         Also familiar with
         <p> Power Bi</p>
         <p>Excell</p>
+        <p>Thunder Client</p>
+        <p>PostMan</p>
        </div>
 
     </div>
