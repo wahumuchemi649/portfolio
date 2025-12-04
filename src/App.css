@@ -111,7 +111,7 @@ header h1 {
 
 .intro p {
   font-size: 20px;
-  color: #374151;
+  color: #000;
 }
 .brief {
   margin-top: 15px;
@@ -201,6 +201,7 @@ hr{
 width:40%;
 
 }
+
 
 .projects {
   padding: 60px 10%;
@@ -456,5 +457,13 @@ width:40%;
     width: 100%;
     max-width: 450px;
   }
+}
+footer{
+  text-align: center;
+  padding: 20px;
+  background-color: #f3f4f6;
+  color: #000;
+  font-size: 14px;
+
 }
 

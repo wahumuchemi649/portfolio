@@ -7,9 +7,28 @@ import{ SiGmail, SiPhonepe} from 'react-icons/si'
 import './App.css'
 import degrees from './assets/degrees.png'
 import HeadSpace from './assets/Headspace.png'
+import './components/skills.css'
+import React, { useRef } from 'react';
+import emailjs from 'emailjs-com';
 
 
 function App() {
+   const sendEmail = (e) => {
+    e.preventDefault(); // prevent page reload
+
+    emailjs.sendForm(
+      'default_service',    // from EmailJS
+      'template_qv8u9pf',   // from EmailJS
+      form.current,
+      'DiqsaR9NnLq6Tll2N'     // from EmailJS
+    )
+    .then((result) => {
+        alert('Message sent successfully!');
+        form.current.reset(); // clear the form
+    }, (error) => {
+        alert('Failed to send message, please try again.');
+    });
+  };
   return (
 <>
  <header>
@@ -33,7 +52,7 @@ function App() {
   <div className='intro'>
      <div className='wave'> <FaRegHandPaper size={20} color={"#eeba0dff"}/> Hello I'm </div>
      <h2 className='name'>Wahu Muchemi</h2>
-     <p>A software engineering student and an aspiring data scientist</p>
+     <p><strong>A software engineering student and an aspiring data scientist</strong></p>
     </div>
     <p className='brief'>Passionate about building web applications and extracting insights from data. Experienced with Django, React, and modern web technologies, with a strong interest in machine learning and data analytics.</p>
       <div className='button'>
@@ -89,13 +108,119 @@ function App() {
     </div>
   </div>
 
- {/* <div id='skills' className='skills'>
+ <div id='skills' className='skills'>
     <h1>Skills&Technologies</h1>
     <hr />
     <p>A comprehensive overview of my technical skills and proficiency levels</p>
+    <div className='skillCards'>
+      <div className='majors'>
+        <br /><h3>BackEnd Development</h3>
+        <div className='skillRow'>
+          <span>Django</span>
+          <span>80%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '80%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>Python</span>
+          <span>70%</span>
+        </div>
+          <div className='progess'>
+          <div className='progressBar' style={{width: '70%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>Rest API</span>
+          <span>75%</span>
+        </div>
+  <div className='progess'>
+          <div className='progressBar' style={{width: '75%'}}></div>
+        </div>
+      </div>
+      <div className='majors'>
+        <br /><h3>Frontend Develoment</h3>
+        <div className='skillRow'>
+          <span>HTML</span>
+          <span>80%</span>
+        </div>
+          <div className='progess'>
+          <div className='progressBar' style={{width: '80%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>CSS</span>
+          <span>80%</span>
+        </div>
+          <div className='progess'>
+          <div className='progressBar' style={{width: '80%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>React</span>
+          <span>83%</span>
+        </div>
+  <div className='progess'>
+          <div className='progressBar' style={{width: '83%'}}></div>
+        </div>
+      </div>
+      <div className='majors'>
+        <br /><h3>Data Science & Analytics</h3>
+        <div className='skillRow'>
+          <span>Numpy & Pandas</span>
+          <span>50%</span>
+        </div>
+          <div className='progess'>
+          <div className='progressBar' style={{width: '50%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>Data Visualization</span>
+          <span>50%%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '50%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>Machine Learning</span>
+          <span>40%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '50%'}}></div>
+        </div>
+
+      </div>
+      <div className='majors'>
+        <br /><h3>Tools & Technologies</h3>
+        <div className='skillRow'>
+          <span>Github</span>
+          <span>80%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '80%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>SQL</span>
+          <span>75%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '75%'}}></div>
+        </div>
+        <div className='skillRow'>
+          <span>Mongo DB</span>
+          <span>70%</span>
+        </div>
+        <div className='progess'>
+          <div className='progressBar' style={{width: '70%'}}></div>
+        </div>
+
+      </div>
+       <div className='lang'>
+        Also familiar with
+        <p> Power Bi</p>
+        <p>Excell</p>
+       </div>
+
+    </div>
     
 
-  </div>*/}
+  </div>
   <div id='projects' className='projects'>
     <h1>Featured Projects</h1>
     <p>A showcase of my recent work in web development and data science</p>
@@ -126,6 +251,8 @@ function App() {
       <div className='lang'>
         <p>React</p>
         <p>CSS</p>
+        <p>Django</p>
+        <p>machine learning</p>
       </div>
 
     </div>
@@ -142,6 +269,8 @@ function App() {
       <div className='lang'>
         <p>React</p>
         <p>CSS</p>
+        <p>Django</p>
+        <p>machine learning</p>
       </div>
 
     </div>
@@ -176,10 +305,13 @@ function App() {
     
     </div>
     <hr />
-    
+    <footer>
+      <p>Built with: React& CSS</p>
+      <p>&copy; 2025 Wahu Muchemi. All rights reserved.</p>
+    </footer>
 
   
- 
+  
   </>
   )
   

@@ -1,0 +1,103 @@
+/* Container for the entire skills section */
+.skills {
+  width: 100%;
+  padding: 4rem 2rem;
+  background-color: #f5f7fa;
+  text-align: center;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Section heading */
+.skills h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+  color: #1f2937;
+}
+
+.skills hr {
+  width: 80px;
+  border: 2px solid #10b981;
+  margin: 0 auto 1rem auto;
+  border-radius: 2px;
+}
+
+.skills p {
+  color: #4b5563;
+  font-size: 1rem;
+  margin-bottom: 3rem;
+}
+
+/* Container for all skill cards */
+.skillCards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Individual skill category */
+.majors {
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 1.5rem;
+  flex: 1 1 250px;
+  max-width: 300px;
+  text-align: left;
+}
+
+.majors h3 {
+  color: #111827;
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+}
+
+/* Skill row with name and percentage */
+.skillRow {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.25rem;
+  font-weight: 500;
+  color: #374151;
+}
+
+/* Progress bar container */
+.progess {
+  background-color: #e5e7eb;
+  border-radius: 10px;
+  height: 10px;
+  margin-bottom: 1rem;
+  overflow: hidden;
+}
+
+/* Inner progress bar */
+.progressBar {
+  height: 100%;
+  background-color: #10b981;
+  border-radius: 10px 0 0 10px;
+  transition: width 0.6s ease;
+}
+
+/* Additional languages/tools section */
+.lang {
+  margin-top: 1rem;
+  font-style: italic;
+  color: #6b7280;
+}
+
+.lang p {
+  margin: 0.2rem 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .skillCards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .majors {
+    max-width: 90%;
+  }
+}
