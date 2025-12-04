@@ -6,7 +6,7 @@ import{ FaLinkedin, FaGithub, FaTwitter,FaLocationArrow } from 'react-icons/fa'
 import{ SiGmail, SiPhonepe} from 'react-icons/si'
 import './App.css'
 import degrees from './assets/degrees.png'
-import HeadSpace from './assets/Headspace.png'
+import HeadSpace from './assets/HeadSpace.png'
 import './components/skills.css'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
