@@ -287,7 +287,7 @@ function App() {
           <p><SiGmail size={40} color='#059669'/> <strong>Email:</strong>lydiamuchemi260@gmail.com</p>
           <p><SiPhonepe size={40} color='#059669'/><strong>Phone</strong>+254 57438047</p>
           <p><FaLocationArrow size={40} color='#059669' /><strong>Locatiom</strong>Kisii, Kenya</p>
-         <div className='git'><strong>Connect with me: <a href='https://github.com/wahumuchemi649'>Github</a></strong></div> 
+         <div className='git'><strong>Connect with me: <FaGithub size={20} color='#064e3b' /><a href='https://github.com/wahumuchemi649'>Github</a></strong></div> 
         
 
         </div>
