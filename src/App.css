@@ -27,14 +27,23 @@
   background-color: #d1fae5 ;
   color: #000;
   border: #059669;
-}
 
+}
+.portrait img{
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #10b981;
+  float: left;
+}
 
 .header {
   background: linear-gradient(135deg, #ecfdf5, #d1fae5);
   padding: 120px 10% 100px 10%;
   font-family: 'Inter', sans-serif;
   text-align: left;
+  display: flex;
 }
 
 
@@ -55,7 +64,7 @@ header h1 {
   font-size: 30px;
   font-weight: 800;
   color: #064e3b;
-}
+} 
 
 .navbar ul {
   list-style: none;
@@ -232,7 +241,7 @@ width:40%;
 
 .Allprojects {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 30px;
 }
 

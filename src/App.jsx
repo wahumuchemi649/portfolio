@@ -7,6 +7,7 @@ import{ SiGmail, SiPhonepe} from 'react-icons/si'
 import './App.css'
 import degrees from './assets/degrees.png'
 import HeadSpace from './assets/HeadSpace.png'
+import official from './assets/official.jpg'
 import './components/skills.css'
 import React, { useRef } from 'react';
 import emailjs from 'emailjs-com';
@@ -46,9 +47,14 @@ function App() {
 
      </div>
     </header>
+    
   <div className='header'>
-   
-    <div className='home' id='home'>
+    <div className='portrait'>
+    <img src={official} alt="Wahu Muchemi Portrait" />
+    </div>
+    <div>
+ <div>
+     <div className='home' id='home'>
   <div className='intro'>
      <div className='wave'> <FaRegHandPaper size={20} color={"#eeba0dff"}/> Hello I'm </div>
      <h2 className='name'>Wahu Muchemi</h2>
@@ -61,6 +67,10 @@ function App() {
   </div>
     </div>
   
+   </div>
+    </div>
+  
+   
   </div>
   
   <div id='about' className='about'>
@@ -247,7 +257,7 @@ function App() {
       <p>Built with django, React, CSS, Rest API</p>
       <div className='projectLinks'>
       <a href='https://github.com/wahumuchemi649/HeadSpace/tree/master' >code</a>
-      <a href='https://headspace-therapy-system.onrender.com/' >Demo</a>
+      <a href='https://headspace-kgmmuo3m9-wahu-muchemis-projects.vercel.app/' >Demo</a>
       </div>
       
       <div className='lang'>
@@ -258,7 +268,7 @@ function App() {
       </div>
 
     </div>
-     <div className='projectCard'>
+    {/* <div className='projectCard'>
       <img src={HeadSpace} alt="Headspace Project" />
       <h6>A healing-tracking system</h6>
       <p>Though still under development, HeadSpace is a system that seeks to improve traditional therapy systems by tracking the chat system of a therapists and a client and from that track the clients healing system</p>
@@ -275,7 +285,7 @@ function App() {
         <p>machine learning</p>
       </div>
 
-    </div>
+    </div>*/}
     </div>
     </div>
 
