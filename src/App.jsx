@@ -253,11 +253,13 @@ function App() {
     <div className='projectCard'>
       <img src={HeadSpace} alt="Headspace Project" />
       <h6>A healing-tracking system</h6>
-      <p>Though still under development, HeadSpace is a system that seeks to improve traditional therapy systems by tracking the chat system of a therapists and a client and from that track the clients healing system</p>
+      <p>HeadSpace is a system thats to make therapy services accessible, structured and measurable</p>
+      <p>We are introducing organisation-based access and independent level therapy, making therapy accessible to a wider audience.</p>
+      <p>Version 1.0 is ready and version 1.1 in development to ensure that we can track the healing process of our clients.</p>
       <p>Built with django, React, CSS, Rest API</p>
       <div className='projectLinks'>
       <a href='https://github.com/wahumuchemi649/HeadSpace/tree/master' >code</a>
-      <a href='https://headspace-kgmmuo3m9-wahu-muchemis-projects.vercel.app/' >Demo</a>
+      <a href='https://head-space-beta.vercel.app/' >Demo</a>
       </div>
       
       <div className='lang'>
